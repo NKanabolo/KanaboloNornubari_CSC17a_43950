@@ -7,6 +7,7 @@
 
 //User Defined Libraries
 #include <iostream>
+#include<iomanip>
 #include<cmath>
 #include <cstdlib>
 using namespace std;
@@ -22,7 +23,7 @@ int main(int argc, char** argv) {
     //Enter menu loop
     while (m_running) {
         cout<<"1.  Savitch, 8thEd, Chapter 3, Problem 12\n";
-        cout<<"2.  \n";
+        cout<<"2.  Gaddis, 8thEd, Chapter 3, Problem 13\n";
         cout<<"3.  \n";
         cout<<"4.  \n";
         cout<<"5.  \n";
@@ -71,34 +72,92 @@ int main(int argc, char** argv) {
             }
             case(2):{
                 //Problem 2
+                //Declare Variables
+                float amount, yen_conv, euro_conv;
                 
+                //Declare constants
+                float YEN_PER_DOLLAR=121.28;    //Yen per dollar conversion factor
+                float EUROS_PER_DOLLAR=0.95;    //Euro per dollar conversion factor
                 
+                cout<<"Enter the amount of U.S. Dollars you wish to convert to Yen and Euros\n\n";
+                cin>>amount;    //input of the amount of U.S Dollars
+                
+                cout<<setprecision(2)<<fixed<<showpoint;
+                cout<<setw(8);
+                yen_conv=amount*YEN_PER_DOLLAR;    //converts U.S. Dollar to Yen
+                euro_conv= amount*EUROS_PER_DOLLAR;//converts U.S. Dollar to Euro
+                cout<<"The amount of Yen this equals is :     $"<<yen_conv<<"\n";   //output the amount of Yen converted
+                cout<<"The amount of Euros this equals is :   $"<<euro_conv<<"\n\n";//output the amount of Euros converted
+                
+                //End problem 2
                 break;
             }
             case(3):{
                 //Problem 3
+                //Declare Variables
+                int month, year;
                 
+                cout<<"Select a month by entering a number from 1-12: ";
+                cin>>month;
+                cout<<"Enter a year: ";
+                cin>>year;
+                cout<<endl;
                 
+                if (month==1)
+                    cout<<"January has 31 days\n\n";
+                if (month==2&&year%100==0 &&year%400==0)
+                    cout<<"For this year, February has 29 days\n\n";
+                else if (month==2&&year%100>0&&year%4==0)
+                    cout<<"For this year, February has 29 days\n\n";
+                else if (month==2&&year%100>0 &&year%400>0&&year%4>0)
+                    cout<<"For this year, February has 28 days\n\n";
+                if (month ==3)
+                    cout<<"March has 31 days\n\n";
+                else if (month == 4)
+                    cout<<"April has 30 days\n\n";
+                else if (month == 5)
+                    cout<<"May has 31 days\n\n";
+                else if (month == 6)
+                    cout<<"June has 30 days\n\n";
+                else if (month == 7)
+                    cout<<"July has 31 days\n\n";
+                else if (month == 8)
+                    cout<<"August has 31 days\n\n";
+                else if (month == 9)
+                    cout<<"September has 30 days\n\n";
+                else if (month == 10)
+                    cout<<"October has 31 days\n\n";
+                else if (month == 11)
+                    cout<<"November has 30 days\n\n";
+                else if (month == 12)
+                    cout<<"December has 31 days\n\n";
+                
+                //End problem 3
                 break;
             }
             case(4):{
                 //Problem 4
                 
+                //End problem 4
                 break;
             }
             case(5):{
+                //Problem 5
                 
+                //End problem 5
                 break;
             }
             case(6):{
                 //Problem 6
                 
+                //End problem 6
                 break;
             }
             case(7):
             {
                 //Problem 7
                 
+                //End problem 7
                 break;
             
             default:
