@@ -24,8 +24,8 @@ int main(int argc, char** argv) {
     while (m_running) {
         cout<<"1.  Savitch, 8thEd, Chapter 3, Problem 12\n";
         cout<<"2.  Gaddis, 8thEd, Chapter 3, Problem 13\n";
-        cout<<"3.  \n";
-        cout<<"4.  \n";
+        cout<<"3.  Gaddis, 8thEd, Chapter 4, Problem 10\n";
+        cout<<"4.  Gaddis, 8thEd, Chapter 5, Problem 11\n";
         cout<<"5.  \n";
         cout<<"6.  \n";
         cout<<"7.  \n";
@@ -137,6 +137,24 @@ int main(int argc, char** argv) {
             }
             case(4):{
                 //Problem 4
+                //Declare variables
+                float start, incrRte, days, popGrow;
+                cout<<"Enter the starting population: ";
+                cin>>start;
+                cout<<endl;
+                cout<<"Enter the rate of increase of population as a percent: ";
+                cin>>incrRte;
+                cout<<endl;
+                cout<<"Enter number of days of growth: ";
+                cin>>days;
+                cout<<endl;
+                
+                if (start >= 2&& incrRte >= 0 && days >= 1){
+                    popGrow= start+(start*(incrRte/100)*days);
+                    cout<<"The population grew to " << popGrow << " organisms!\n\n";
+                }
+                else
+                    cout<<"Incorrect input values\n\n";
                 
                 //End problem 4
                 break;
