@@ -13,7 +13,7 @@
 using namespace std;
 
 //Function Prototypes
-
+float celcius(int fhnt);
 //Execution Begins Here
 
 int main(int argc, char** argv) {
@@ -154,14 +154,15 @@ int main(int argc, char** argv) {
                     cout<<"The population grew to " << popGrow << " organisms!\n\n";
                 }
                 else
-                    cout<<"Incorrect input values\n\n";
+                    cout<<"Incorrect input value(s)\n\n";
                 
                 //End problem 4
                 break;
             }
             case(5):{
                 //Problem 5
-                
+                for (int fhnt=0;fhnt<=20;fhnt++)
+                cout<<"  "<<fhnt<<"     "<<celcius(fhnt)<<endl;
                 //End problem 5
                 break;
             }
@@ -185,4 +186,12 @@ int main(int argc, char** argv) {
     //Exit program
     cout << "Now exiting program\n";
     return 0;
+}
+
+float celcius(int fhnt)
+{
+    float celTemp;
+    celTemp= (5.0/9.0)*(fhnt-32.0);
+    return celTemp;
+    
 }
