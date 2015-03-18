@@ -6,10 +6,11 @@
  */
 
 //User Defined Libraries
-#include <iostream>
+#include<iostream>
 #include<iomanip>
 #include<cmath>
-#include <cstdlib>
+#include<cstdlib>
+#include<fstream>
 using namespace std;
 
 //Function Prototypes
@@ -168,6 +169,35 @@ int main(int argc, char** argv) {
             }
             case(6):{
                 //Problem 6
+                int scount=0, ccount=0;
+                char a[3][30];
+                ifstream infile;
+                infile.open("RainOrShine.txt");
+                for (int i=0; i<3;i++){
+                    for(int j=0; j<30;j++){
+                        infile>>a[i][j];
+                        cout<<a[i][j]<<" ";}
+                cout<<endl;}
+                cout<<endl<<endl<<" S  C  R \n\n";
+                for (int i=0;i<1;i++)
+                    for (int j=0;j<30;j++)
+                        if (a[i][j] == 'S')
+                            scount++;
+                            a[0][0]=scount;
+                            cout<<scount<<endl;
+                            scount=0;
+                            scount++;
+                            a[1][0]=scount;
+                            cout<<scount<<endl;
+                            scount=0;
+                            scount++;
+                            a[2][0]=scount;
+                            cout<<scount<<endl;
+                            scount=0;
+//                        else if (a[i][j] == 'C')
+//                            ccount+=1;
+//                            cout<<ccount<<endl;
+                    
                 
                 //End problem 6
                 break;
