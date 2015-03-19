@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Kanabolo, Nornubari - C++ Review Hmwk - 43950
+PROJECTNAME=C++ Review Hmwk
 
 # Active Configuration
 DEFAULTCONF=Debug

@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_4.x-Windows
-CND_ARTIFACT_NAME_Debug=kanabolo__nornubari_-_c___review_hmwk_-_43950
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/kanabolo__nornubari_-_c___review_hmwk_-_43950
+CND_ARTIFACT_NAME_Debug=c___review_hmwk
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/c___review_hmwk
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_4.x-Windows/package
-CND_PACKAGE_NAME_Debug=kanabolo,nornubari-c++reviewhmwk-43950.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/package/kanabolo,nornubari-c++reviewhmwk-43950.tar
+CND_PACKAGE_NAME_Debug=c++reviewhmwk.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/package/c++reviewhmwk.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_4.x-Windows
-CND_ARTIFACT_NAME_Release=kanabolo__nornubari_-_c___review_hmwk_-_43950
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_4.x-Windows/kanabolo__nornubari_-_c___review_hmwk_-_43950
+CND_ARTIFACT_NAME_Release=c___review_hmwk
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_4.x-Windows/c___review_hmwk
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin_4.x-Windows/package
-CND_PACKAGE_NAME_Release=kanabolo,nornubari-c++reviewhmwk-43950.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin_4.x-Windows/package/kanabolo,nornubari-c++reviewhmwk-43950.tar
+CND_PACKAGE_NAME_Release=c++reviewhmwk.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin_4.x-Windows/package/c++reviewhmwk.tar
 #
 # include compiler specific variables
 #

@@ -13,9 +13,9 @@ CND_BUILDDIR=build
 CND_DLIB_EXT=dll
 NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/kanabolo__nornubari_-_c___review_hmwk_-_43950
-OUTPUT_BASENAME=kanabolo__nornubari_-_c___review_hmwk_-_43950
-PACKAGE_TOP_DIR=kanabolo,nornubari-c++reviewhmwk-43950/
+OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c___review_hmwk
+OUTPUT_BASENAME=c___review_hmwk
+PACKAGE_TOP_DIR=c++reviewhmwk/
 
 # Functions
 function checkReturnCode
@@ -60,15 +60,15 @@ mkdir -p ${NBTMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory "${NBTMPDIR}/kanabolo,nornubari-c++reviewhmwk-43950/bin"
+makeDirectory "${NBTMPDIR}/c++reviewhmwk/bin"
 copyFileToTmpDir "${OUTPUT_PATH}.exe" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/kanabolo,nornubari-c++reviewhmwk-43950.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/c++reviewhmwk.tar
 cd ${NBTMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/kanabolo,nornubari-c++reviewhmwk-43950.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/c++reviewhmwk.tar *
 checkReturnCode
 
 # Cleanup

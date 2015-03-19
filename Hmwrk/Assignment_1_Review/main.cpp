@@ -11,10 +11,15 @@
 #include<cmath>
 #include<cstdlib>
 #include<fstream>
+#include<string>
 using namespace std;
 
 //Function Prototypes
 float celcius(int fhnt);
+void prntArr(int names[], int length);
+int binSearch(int NUM_NAMES, int names[], int trgt); //search for the number 50 in one dimensional array
+int prntbinSrch(int NUM_NAMES, int names[], int trgt); //print binary search results
+void bSort(int names[], int NUM_NAMES);
 //Execution Begins Here
 
 int main(int argc, char** argv) {
@@ -169,8 +174,9 @@ int main(int argc, char** argv) {
             }
             case(6):{
                 //Problem 6
-                int scount=0, ccount=0;
+                int scount=0, ccount=0, rcount=0;
                 char a[3][30];
+                int b[3][3];
                 ifstream infile;
                 infile.open("RainOrShine.txt");
                 for (int i=0; i<3;i++){
@@ -178,26 +184,30 @@ int main(int argc, char** argv) {
                         infile>>a[i][j];
                         cout<<a[i][j]<<" ";}
                 cout<<endl;}
-                cout<<endl<<endl<<" S  C  R \n\n";
-                for (int i=0;i<1;i++)
-                    for (int j=0;j<30;j++)
+                cout<<endl<<endl<<"   S    C    R\n";
+                for (int i=0;i<3;i++){
+                    for (int j=0;j<30;j++){
                         if (a[i][j] == 'S')
                             scount++;
-                            a[0][0]=scount;
-                            cout<<scount<<endl;
-                            scount=0;
-                            scount++;
-                            a[1][0]=scount;
-                            cout<<scount<<endl;
-                            scount=0;
-                            scount++;
-                            a[2][0]=scount;
-                            cout<<scount<<endl;
-                            scount=0;
-//                        else if (a[i][j] == 'C')
-//                            ccount+=1;
-//                            cout<<ccount<<endl;
+                        else if (a[i][j] == 'C')
+                            ccount++;
+                        else
+                            rcount++;
+                    }
+                    b[i][0]=scount;
+                    b[i][1]=ccount;
+                    b[i][2]=rcount;
+                    scount=0;
+                    ccount=0;
+                    rcount=0;
                     
+                }
+                for (int i=0;i<3;i++){
+                    for (int j=0;j<3;j++){
+                        cout<<setw(4)<<b[i][j]<<" ";
+                    }
+                    cout<<endl;
+                }
                 
                 //End problem 6
                 break;
@@ -205,14 +215,18 @@ int main(int argc, char** argv) {
             case(7):
             {
                 //Problem 7
-                
+                 const int NUM_NAMES = 5;      
+                 string names[NUM_NAMES] = {"Kanabolo, Nornubari", "Joseph Levin", "Mark Lehr", "G2 Caddel", "Bae"};
+                 prntArr(5, 5);
+                 bSort(5, 5);
+                 prntbinSrch(5, 5, "Bae");
                 //End problem 7
                 break;
-            
+            }
             default:
                 cout<<"Unknown input, please try again.\n\n";
         }
-        }}
+        }
     //Exit program
     cout << "Now exiting program\n";
     return 0;
@@ -224,4 +238,61 @@ float celcius(int fhnt)
     celTemp= (5.0/9.0)*(fhnt-32.0);
     return celTemp;
     
+}
+
+void prntArr(int names[], int length)
+{
+	for(int i=0; i<length; i++) //form a one dimensional array
+	{ 
+            names[i] = 5; //controls range of of numbers used. 10-100
+            cout << names[i] << " "; //prints each number of array
+	}
+	cout << endl << endl;
+	
+}
+
+void bSort(int names[], int NUM_NAMES)
+{
+    int temp; //Declare variables
+    for(int i=0;i<NUM_NAMES;i++) //sort the one dimensional array
+    {
+       for(int j=0;j<(NUM_NAMES-1);j++) //organize array by looking at each column
+            if(names[j]>names[j+1]) //if first number is greater than the next then switch 
+                            //them and continue across rest of array
+           {
+               temp=names[j]; //swap values
+               names[j]=names[j+1];
+               names[j+1]=temp;
+           }
+    }
+    for(int i=0;i<NUM_NAMES;i++) //print each sorted number
+        cout<<names[i]<<" ";
+    cout<< endl<< endl;
+}
+
+int binSearch(int NUM_NAMES, int names[], int trgt)
+{
+    int mid, lowbound= 0, hghbound=NUM_NAMES-1; //Declare variables
+    while (lowbound <= hghbound) 
+    {
+         int mid = (lowbound + hghbound)/2; //find middle sorted number in one dimensional array
+         if (names[mid] == trgt) //if selected middle value is the target then it is found
+             return mid;
+         else if (names[mid] < trgt) 
+             lowbound = mid + 1; //if selected middle is less than target, then next number is beginning of next search
+         else hghbound = mid - 1; //if selected middle is more than target, then previous number is end of next search
+    }
+      return -1;
+    
+}
+
+int prntbinSrch(int NUM_NAMES, int names[], int trgt)
+{
+    int found; //Declare variables
+    found=binSearch(NUM_NAMES, names, trgt); //call binary search function
+    if (found==-1) //if value found is not the returned value then say the number was not found, otherwise, it is found
+        cout << endl << "The number 50 was not found" << endl;
+    else
+        cout << endl << "The number 50 was found at location "<<found << endl;
+        
 }
