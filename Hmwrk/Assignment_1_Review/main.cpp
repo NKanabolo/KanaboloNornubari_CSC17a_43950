@@ -16,10 +16,10 @@ using namespace std;
 
 //Function Prototypes
 float celcius(int fhnt);
-void prntArr(int names[], int length);
-int binSearch(int NUM_NAMES, int names[], int trgt); //search for the number 50 in one dimensional array
-int prntbinSrch(int NUM_NAMES, int names[], int trgt); //print binary search results
-void bSort(int names[], int NUM_NAMES);
+void prntArr(string names[], int length);
+int binSearch(string names[], int NUM_NAMES, string trgt); //search for the number 50 in one dimensional array
+int prntbinSrch(string names[], int NUM_NAMES, string trgt); //print binary search results
+void bSort(string names[], int NUM_NAMES);
 //Execution Begins Here
 
 int main(int argc, char** argv) {
@@ -215,11 +215,10 @@ int main(int argc, char** argv) {
             case(7):
             {
                 //Problem 7
-                 const int NUM_NAMES = 5;      
-                 string names[NUM_NAMES] = {"Kanabolo, Nornubari", "Joseph Levin", "Mark Lehr", "G2 Caddel", "Bae"};
-                 prntArr(5, 5);
-                 bSort(5, 5);
-                 prntbinSrch(5, 5, "Bae");
+                 string names[5] = {"Nornubari Kanabolo,", "Joseph Levin,", "Mark Lehr,", "G2 Caddel,", "Bae,"};
+                 bSort(names, 5);
+                 prntArr(names, 5);
+                 prntbinSrch(names, 5, "Nornubari Kanabolo");
                 //End problem 7
                 break;
             }
@@ -240,7 +239,7 @@ float celcius(int fhnt)
     
 }
 
-void prntArr(int names[], int length)
+void prntArr(string names[], int length)
 {
 	for(int i=0; i<length; i++) //form a one dimensional array
 	{ 
@@ -251,12 +250,12 @@ void prntArr(int names[], int length)
 	
 }
 
-void bSort(int names[], int NUM_NAMES)
+void bSort(string names[], int n)
 {
-    int temp; //Declare variables
-    for(int i=0;i<NUM_NAMES;i++) //sort the one dimensional array
+    string temp; //Declare variables
+    for(int i=0;i<n;i++) //sort the one dimensional array
     {
-       for(int j=0;j<(NUM_NAMES-1);j++) //organize array by looking at each column
+       for(int j=0;j<(n-1);j++) //organize array by looking at each column
             if(names[j]>names[j+1]) //if first number is greater than the next then switch 
                             //them and continue across rest of array
            {
@@ -265,14 +264,14 @@ void bSort(int names[], int NUM_NAMES)
                names[j+1]=temp;
            }
     }
-    for(int i=0;i<NUM_NAMES;i++) //print each sorted number
+    for(int i=0;i<n;i++) //print each sorted number
         cout<<names[i]<<" ";
     cout<< endl<< endl;
 }
 
-int binSearch(int NUM_NAMES, int names[], int trgt)
+int binSearch(string names[], int n, string trgt)
 {
-    int mid, lowbound= 0, hghbound=NUM_NAMES-1; //Declare variables
+    int mid, lowbound= 0, hghbound=n-1; //Declare variables
     while (lowbound <= hghbound) 
     {
          int mid = (lowbound + hghbound)/2; //find middle sorted number in one dimensional array
@@ -286,11 +285,11 @@ int binSearch(int NUM_NAMES, int names[], int trgt)
     
 }
 
-int prntbinSrch(int NUM_NAMES, int names[], int trgt)
+int prntbinSrch(string names[], int n, string trgt)
 {
-    int found; //Declare variables
-    found=binSearch(NUM_NAMES, names, trgt); //call binary search function
-    if (found==-1) //if value found is not the returned value then say the number was not found, otherwise, it is found
+    string found; //Declare variables
+    found=binSearch(names, n, trgt); //call binary search function
+    if (found=="Nornubari Kanabolo") //if value found is not the returned value then say the number was not found, otherwise, it is found
         cout << endl << "The number 50 was not found" << endl;
     else
         cout << endl << "The number 50 was found at location "<<found << endl;
