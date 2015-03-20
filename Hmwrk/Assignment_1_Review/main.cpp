@@ -215,10 +215,13 @@ int main(int argc, char** argv) {
             case(7):
             {
                 //Problem 7
-                 string names[5] = {"Nornubari Kanabolo,", "Joseph Levin,", "Mark Lehr,", "G2 Caddel,", "Bae,"};
-                 bSort(names, 5);
-                 prntArr(names, 5);
-                 prntbinSrch(names, 5, "Nornubari Kanabolo");
+                 string names[20] = {"Nornubari", "Levin", "Mark", "Caddel", "Bae", 
+                 "Terry", "Alex", "Patrick", "Garon", "Aaron",
+                 "Sean", "Ricardo", "Rick", "Andres", "Josue", 
+                 "Fernando", "Britney", "Maxwell", "Jamal", "Henry"};
+                 bSort(names, 20);
+                 prntArr(names, 20);
+                 prntbinSrch(names, 20, "Levin");
                 //End problem 7
                 break;
             }
@@ -239,12 +242,11 @@ float celcius(int fhnt)
     
 }
 
-void prntArr(string names[], int length)
+void prntArr(string names[], int n)
 {
-	for(int i=0; i<length; i++) //form a one dimensional array
+	for(int i=0; i<n; i++) //form a one dimensional array
 	{ 
-            names[i] = 5; //controls range of of numbers used. 10-100
-            cout << names[i] << " "; //prints each number of array
+            cout << names[i] << " "; //prints each string of array
 	}
 	cout << endl << endl;
 	
@@ -287,11 +289,11 @@ int binSearch(string names[], int n, string trgt)
 
 int prntbinSrch(string names[], int n, string trgt)
 {
-    string found; //Declare variables
+    int found; //Declare variables
     found=binSearch(names, n, trgt); //call binary search function
-    if (found=="Nornubari Kanabolo") //if value found is not the returned value then say the number was not found, otherwise, it is found
-        cout << endl << "The number 50 was not found" << endl;
+    if (found==-1) //if value found is not the returned value then say the number was not found, otherwise, it is found
+        cout << endl << "Levin was not found." << endl;
     else
-        cout << endl << "The number 50 was found at location "<<found << endl;
+        cout << endl << "Levin was found."<< endl;
         
 }
