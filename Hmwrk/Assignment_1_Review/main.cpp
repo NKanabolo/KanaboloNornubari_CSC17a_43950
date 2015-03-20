@@ -102,40 +102,40 @@ int main(int argc, char** argv) {
                 //Problem 3
                 //Declare Variables
                 int month, year;
-                
+                //Inputs
                 cout<<"Select a month by entering a number from 1-12: ";
-                cin>>month;
+                cin>>month;     //input month
                 cout<<"Enter a year: ";
-                cin>>year;
+                cin>>year;      //input year
                 cout<<endl;
                 
-                if (month==1)
+                if (month==1)   //if input=1 then output January
                     cout<<"January has 31 days\n\n";
-                if (month==2&&year%100==0 &&year%400==0)
-                    cout<<"For this year, February has 29 days\n\n";
-                else if (month==2&&year%100>0&&year%4==0)
-                    cout<<"For this year, February has 29 days\n\n";
-                else if (month==2&&year%100>0 &&year%400>0&&year%4>0)
+                if (month==2&&year%100==0 &&year%400==0)    //if input=2, year is divisible by 100 and 400, then output Leap Year
+                    cout<<"This year is a Leap Year, so February has 29 days\n\n";
+                else if (month==2&&year%100>0&&year%4==0)   //if input=2, year is not divisible by 100, but divisible by 4, then output Leap Year
+                    cout<<"This year is a Leap Year, so February has 29 days\n\n";
+                else if (month==2&&year%100>0 &&year%400>0&&year%4>0)   //if input=2, year is not divisible by 100 and 400, then output non Leap Year
                     cout<<"For this year, February has 28 days\n\n";
-                if (month ==3)
+                if (month ==3)      //if input=3 then output March
                     cout<<"March has 31 days\n\n";
-                else if (month == 4)
+                else if (month == 4)//if input=4 then output April
                     cout<<"April has 30 days\n\n";
-                else if (month == 5)
+                else if (month == 5)//if input=5 then output May
                     cout<<"May has 31 days\n\n";
-                else if (month == 6)
+                else if (month == 6)//if input=6 then output June
                     cout<<"June has 30 days\n\n";
-                else if (month == 7)
+                else if (month == 7)//if input=7 then output July
                     cout<<"July has 31 days\n\n";
-                else if (month == 8)
+                else if (month == 8)//if input=8 then output August
                     cout<<"August has 31 days\n\n";
-                else if (month == 9)
+                else if (month == 9)//if input=9 then output September
                     cout<<"September has 30 days\n\n";
-                else if (month == 10)
+                else if (month == 10)//if input=10 then output October
                     cout<<"October has 31 days\n\n";
-                else if (month == 11)
+                else if (month == 11)//if input=11 then output November
                     cout<<"November has 30 days\n\n";
-                else if (month == 12)
+                else if (month == 12)//if input=12 then output December
                     cout<<"December has 31 days\n\n";
                 
                 //End problem 3
@@ -161,7 +161,6 @@ int main(int argc, char** argv) {
                 }
                 else
                     cout<<"Incorrect input value(s)\n\n";
-                
                 //End problem 4
                 break;
             }
@@ -200,7 +199,6 @@ int main(int argc, char** argv) {
                     scount=0;
                     ccount=0;
                     rcount=0;
-                    
                 }
                 for (int i=0;i<3;i++){
                     for (int j=0;j<3;j++){
@@ -208,7 +206,6 @@ int main(int argc, char** argv) {
                     }
                     cout<<endl;
                 }
-                
                 //End problem 6
                 break;
             }
