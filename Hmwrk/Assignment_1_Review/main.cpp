@@ -32,9 +32,9 @@ int main(int argc, char** argv) {
         cout<<"2.  Gaddis, 8thEd, Chapter 3, Problem 13\n";
         cout<<"3.  Gaddis, 8thEd, Chapter 4, Problem 10\n";
         cout<<"4.  Gaddis, 8thEd, Chapter 5, Problem 11\n";
-        cout<<"5.  \n";
-        cout<<"6.  \n";
-        cout<<"7.  \n";
+        cout<<"5.  Gaddis, 8thEd, Chapter 6, Problem 7\n";
+        cout<<"6.  Gaddis, 8thEd, Chapter 7, Problem 6\n";
+        cout<<"7.  Gaddis, 8thEd, Chapter 8, Problem 7\n";
         cout<<"8. Quit the program\n";
         cout << "Enter an integer from 1 to 8 to select an option above: ";
         cin>>m_choice;
