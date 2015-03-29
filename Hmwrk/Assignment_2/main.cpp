@@ -7,6 +7,7 @@
 
 //User Defined Libraries
 #include<iostream>
+#include<new>
 
 using namespace std;
 
@@ -15,6 +16,10 @@ void mode(int[], int);//finds most frequent number in array
 void mean(int[], int);//calculates average of array values
 void sort(int[], int);//sorts array
 void median(int[], int);//selects middle number or numbers of sorted array
+void arrAllo(int max, int n);//allocate array of integers
+void scores(int scr[], int n);//display scores
+void sortScr(int scr[], int n);//sort scores
+void scrAve(int scr[], int n);//calculate average of scores
 //Execution Begins Here
 
 int main(int argc, char** argv) {
@@ -24,8 +29,8 @@ int main(int argc, char** argv) {
     //Enter menu loop
     while (m_running) {
         cout<<"1.  Mean, Median, Mode\n";
-        cout<<"2.  Gaddis, 8thEd, Chapter 9, Problem \n";
-        cout<<"3.  Gaddis, 8thEd, Chapter 9, Problem \n";
+        cout<<"2.  Gaddis, 8thEd, Chapter 9, Problem 1\n";
+        cout<<"3.  Gaddis, 8thEd, Chapter 9, Problem 2\n";
         cout<<"4.  Gaddis, 8thEd, Chapter 9, Problem \n";
         cout<<"5.  Gaddis, 8thEd, Chapter 9, Problem \n";
         cout<<"6.  Gaddis, 8thEd, Chapter 9, Problem \n";
@@ -57,14 +62,19 @@ int main(int argc, char** argv) {
             case(2):{
                 //Problem 2
                 //Declare Variables
-                
+                int max,n;
+                arrAllo(max, n);
                 //End problem 2
                 break;
             }
             case(3):{
                 //Problem 3
                 //Declare Variables
-                
+                int scr[10];
+                int n=10;
+                 scores(scr, n);
+                 sortScr(scr, n);
+                 scrAve(scr, n);
                 //End problem 3
                 break;
             }
@@ -164,4 +174,67 @@ void sort(int newArr[], int terms){
     }
     cout << "\n";
     median(newArr, terms);//call median function
+}
+
+void arrAllo(int max, int n){   
+    //Declare variables    
+    int * ptr;
+    cout << "How many numbers do you want to enter? ";      
+    cin >> max;//get the number of values to store
+    
+    ptr= new int[max];//allocate memory for new array
+    if (ptr == '\0')
+        cout << "Error: memory could not be allocated";
+    else
+    {
+        for (n=0; n<max; n++)
+        {
+          cout << "Enter number: ";
+          cin >> ptr[n];
+        }
+        cout << "You have entered: ";
+        for (n=0; n<max; n++)
+          cout << ptr[n] << " ";
+        cout<<endl<<endl;
+    delete[] ptr;
+    }
+}
+
+void scores(int scr[], int n){
+    //Fill in the scores of the array
+    for(int i=0; i<n; i++){
+        cout << "Fill in the "<< i+1 << " score. :";
+        cin >> scr[i];//input up to 10 scores for the array
+    }
+    cout << endl<< "Scores entered: ";
+        for (n=0; n<10; n++)
+          cout << scr[n] << " ";
+        cout<<endl<<endl;
+}
+
+void sortScr(int scr[], int n){
+    //Sort scores
+    for(int x=0; x<n; x++){
+         for(int y=0; y<n-1; y++){
+             if(scr[y]>scr[y+1]){
+                 int temp = scr[y+1];//swap scores into ascending order
+                 scr[y+1] = scr[y];
+                 scr[y] = temp;
+             }
+         }
+     }
+    cout << "Ordered Score List: ";
+    for(int i =0; i<n; i++){//go through size of array and print each sorted score
+        cout << scr[i] << " ";
+    }
+    cout << "\n\n";
+}
+
+void scrAve(int scr[], int n){
+    //Declare variables
+    int total = 0;
+    for(int i=0;i<n; i++){
+        total += scr[i]; //add up each of the 10 scores
+    }
+    cout << "The average score is a " << total/n << endl <<endl;//calculate and output average
 }
