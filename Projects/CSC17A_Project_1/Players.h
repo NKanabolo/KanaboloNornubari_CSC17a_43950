@@ -10,8 +10,8 @@
 
 struct Players
 {
-    char playerBoard;  //Array with all the player tokens
-    char enemyBoard;   //Array with all the enemy tokens
+    char playrBd;  //Array with all the player tokens
+    char enemyBd;   //Array with all the enemy tokens
 };
 
 #endif	/* PLAYERS_H */
