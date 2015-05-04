@@ -46,7 +46,7 @@ int main(int argc, char** argv) {
     //Calls the function that prints the board
     prntBrd(game);
     
-    //Resizing array
+    //Allocate new array for resizing board
     boards = new Players*[game.rows];
     for(int i = 0; i < game.rows; ++i)
         boards[i] = new Players[game.columns];
@@ -64,7 +64,7 @@ void begin()
 {
     //Output the introduction
     cout << endl << endl;
-    cout << right << setw(50) << "Welcome to War of Ships!" << endl ;
+    cout << right << setw(30) << "Welcome to War of Ships!" << endl ;
     cout << endl << "This is a 2 player ship war game.\n";
     cout << "Guess where your opponent's vessels are and sink them before your opponent sinks yours!\n"; 
     cout << endl;
@@ -109,9 +109,8 @@ void prntBrd(Board a)
 
 Players **usrInp(Board b)
 {
-    //Declaring dynamic array
+    //Declare and allocate dynamic array
     Players **arr;     
-    
     arr = new Players*[b.rows];
     for(int i = 0; i < b.rows; ++i)
         arr[i] = new Players[b.columns];
@@ -196,14 +195,14 @@ Players **usrInp(Board b)
 //Function where all moves and calculations take place
 void war(Board g, Players **b)
 {
-    int row = 0;     //Player rows
-    int column = 0;  //Player columns
+    int plyrRow = 0;  //Initialize layer rows
+    int plyrCol = 0;  //Initialize player columns
     
-    int enmyRow = 0;  //Enemy rows
-    int enmyCol = 0;  //Enemy columns
+    int enmyRow = 0;  //Initialize enemy rows
+    int enmyCol = 0;  //Initialize enemy columns
     
-    int playrPts = 0; //Counter for each ship destroyed by user
-    int enmyPts = 0;  //Counter for each ship destroyed by enemy
+    int playrPts = 0; //Initialize counter for each ship destroyed by user
+    int enmyPts = 0;  //Initialize counter for each ship destroyed by enemy
     char enmyBlk[g.rows][g.columns];//Blank board for the enemy
     
      //Setting enmyBlk array with blank spaces
@@ -218,7 +217,7 @@ void war(Board g, Players **b)
     //Loop to make the moves
     while(playrPts <= g.ships || enmyPts <= g.ships)
     {
-        cout << "\n   User's Board" << endl;
+        cout << endl << "   User's Board" << endl;
         for(int i = 0; i < g.columns; i++)
         {
             cout << "     " << i+1;
