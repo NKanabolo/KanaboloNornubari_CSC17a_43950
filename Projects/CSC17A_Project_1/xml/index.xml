@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.9.1">
+  <compound refid="struct_board" kind="struct"><name>Board</name>
+    <member refid="struct_board_1ab0678710e0cb026be902dbb6a8ad8c40" kind="variable"><name>rows</name></member>
+    <member refid="struct_board_1abd6db5048c565a2236812ae739f12638" kind="variable"><name>columns</name></member>
+    <member refid="struct_board_1a8516818f13e7662c7cbda336307cf38e" kind="variable"><name>ships</name></member>
+  </compound>
+  <compound refid="struct_players" kind="struct"><name>Players</name>
+    <member refid="struct_players_1abb5b042a3f596d8dcc59ee789e39ab5e" kind="variable"><name>playrBd</name></member>
+    <member refid="struct_players_1a6121609150ccdce226350cc99ae2f5e6" kind="variable"><name>enemyBd</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_8dep_8inc" kind="file"><name>.dep.inc</name>
+  </compound>
+  <compound refid="_board_8h" kind="file"><name>Board.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ab0bdf5cca484fb2ba637c39384b27fb2" kind="function"><name>begin</name></member>
+    <member refid="main_8cpp_1acb722b7038e1a09a439b65544ce4550b" kind="function"><name>prntBrd</name></member>
+    <member refid="main_8cpp_1a83c98021351a69d6a8f98a228870cd53" kind="function"><name>usrInp</name></member>
+    <member refid="main_8cpp_1a0a8867b1e11289d970883db934999bd5" kind="function"><name>war</name></member>
+    <member refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_players_8h" kind="file"><name>Players.h</name>
+  </compound>
+</doxygenindex>

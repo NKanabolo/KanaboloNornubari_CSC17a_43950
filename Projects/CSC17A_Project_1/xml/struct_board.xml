@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="struct_board" kind="struct" language="C++" prot="public">
+    <compoundname>Board</compoundname>
+    <includes refid="_board_8h" local="no">Board.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_board_1ab0678710e0cb026be902dbb6a8ad8c40" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Board::rows</definition>
+        <argsstring></argsstring>
+        <name>rows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_1/Board.h" line="17" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_1/Board.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_board_1abd6db5048c565a2236812ae739f12638" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Board::columns</definition>
+        <argsstring></argsstring>
+        <name>columns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_1/Board.h" line="18" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_1/Board.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_board_1a8516818f13e7662c7cbda336307cf38e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Board::ships</definition>
+        <argsstring></argsstring>
+        <name>ships</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_1/Board.h" line="19" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_1/Board.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_1/Board.h" line="16" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_1/Board.h" bodystart="15" bodyend="20"/>
+    <listofallmembers>
+      <member refid="struct_board_1abd6db5048c565a2236812ae739f12638" prot="public" virt="non-virtual"><scope>Board</scope><name>columns</name></member>
+      <member refid="struct_board_1ab0678710e0cb026be902dbb6a8ad8c40" prot="public" virt="non-virtual"><scope>Board</scope><name>rows</name></member>
+      <member refid="struct_board_1a8516818f13e7662c7cbda336307cf38e" prot="public" virt="non-virtual"><scope>Board</scope><name>ships</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

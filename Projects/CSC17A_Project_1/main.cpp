@@ -9,6 +9,8 @@
 #include <iostream>
 #include <iomanip>
 #include <ctime>
+#include "Board.h"
+#include "Players.h"
 
 using namespace std;
 
@@ -20,13 +22,15 @@ void begin();
 void prntBrd(Board);
 //Gets the ships position in the board
 Players **usrInp(Board);
+//Where the war is
+void war(Board, Players**);
 
 //Execution Begins Here
 
 int main(int argc, char** argv) {
     //Declare structures
-    Board game;       //Structure that holds the board dimensions
-    Players **boards; //Structure that composes the players boards
+    struct Board game;       //Structure that holds the board dimensions
+    struct Players **boards; //Structure that composes the players boards
     
     //Call beginning function
     begin();
@@ -50,6 +54,9 @@ int main(int argc, char** argv) {
     //Retrieve the user's input
     boards = usrInp(game);
     
+    //Calling the war function
+    war(game, boards);
+    
     return 0;
 }
 
@@ -58,7 +65,7 @@ void begin()
     //Output the introduction
     cout << endl << endl;
     cout << right << setw(50) << "Welcome to War of Ships!" << endl ;
-    cout << endl << "This is a 2 player ship battle game.\n";
+    cout << endl << "This is a 2 player ship war game.\n";
     cout << "Guess where your opponent's vessels are and sink them before your opponent sinks yours!\n"; 
     cout << endl;
 }
@@ -154,7 +161,7 @@ Players **usrInp(Board b)
             if(arr[tRow-1][tCol-1].playrBd == 'O')
             {
                 valLoc = false;
-                cout << endl << "You already have a ship there!" << endl;
+                cout << endl << "You already have a ship there" << endl;
             }
             else
             {
@@ -184,4 +191,159 @@ Players **usrInp(Board b)
     
     
     return arr;//Return array with position of ship
+}
+
+//Function where all moves and calculations take place
+void war(Board g, Players **b)
+{
+    int row = 0;     //Player rows
+    int column = 0;  //Player columns
+    
+    int enmyRow = 0;  //Enemy rows
+    int enmyCol = 0;  //Enemy columns
+    
+    int playrPts = 0; //Counter for each ship destroyed by user
+    int enmyPts = 0;  //Counter for each ship destroyed by enemy
+    char enmyBlk[g.rows][g.columns];//Blank board for the enemy
+    
+     //Setting enmyBlk array with blank spaces
+    for(int i = 0; i < g.rows; i++)
+    {
+        for(int j = 0; j < g.columns; j++)
+        {
+            enmyBlk[i][j] = ' ';
+        }
+    }
+    
+    //Loop to make the moves
+    while(playrPts <= g.ships || enmyPts <= g.ships)
+    {
+        cout << "\n   User's Board" << endl;
+        for(int i = 0; i < g.columns; i++)
+        {
+            cout << "     " << i+1;
+        }
+        cout << endl;
+        for(int i = 0; i < g.rows; i++)
+        {
+            cout << "  ";
+            for(int j = 0; j < g.columns; j++)
+            {
+                cout << "|-----";
+            }
+            cout << "|" << endl;
+            cout << i+1 << " ";
+            for(int j = 0; j < g.columns; j++)
+            {
+                cout << "|  " << b[i][j].playrBd << "  ";
+            }
+            cout << "|" << endl;
+        }
+        cout << "  ";
+        for(int j = 0; j < g.columns; j++)
+        {
+            cout << "|-----";
+        }
+        cout << "|" << endl << endl;
+    
+        cout << "   Enemy's Board" << endl;
+        for(int i = 0; i < g.columns; i++)
+        {
+            cout << "     " << i+1;
+        }
+        cout << endl;
+        for(int i = 0; i < g.rows; i++)
+        {
+            cout << "  ";
+            for(int j = 0; j < g.columns; j++)
+            {
+                cout << "|-----";
+            }
+            cout << "|" << endl;
+            cout << i+1 << " ";
+            for(int j = 0; j < g.columns; j++)
+            {
+                cout << "|  " << enmyBlk[i][j] << "  ";
+            }
+            cout << "|" << endl;
+        }
+        cout << "  ";
+        for(int j = 0; j < g.columns; j++)
+        {
+            cout << "|-----";
+        }
+        cout << "|" << endl;
+    
+        //Check for the winner
+        if(playrPts == g.ships)
+        {
+            cout << endl << "You have won the war! The enemy fleet is vanquished!";
+            break;
+        }
+       else if(enmyPts == g.ships)
+        {
+            cout << endl << "You have been defeated by the enemy. Your fleet has been decimated";
+            break;
+        }
+    
+        //Get coordinates to attack the enemy
+        cout << endl << "Where do you wish to launch an attack, Captain?" << endl;
+        cout << "Row: ";
+        cin >> row;
+        while(row <= 0 ||row > g.rows)
+        {
+            cout << endl << "Invalid input. Try again" << endl;
+           cout << "Row: ";
+            cin >> row;
+        }
+        cout << "Column: ";
+        cin >> column; 
+        
+       //Confirm user's move
+       while(column <= 0 || column > g.columns)
+        {
+            cout << endl << "Invalid input. Try again" << endl;
+            cout << "Column: ";
+            cin >> column;
+        }
+    
+        if(b[row-1][column-1].enemyBd == ' ')
+        {
+            b[row-1][column-1].enemyBd = 'X';
+            enmyBlk[row-1][column-1] = 'X';
+            cout << endl << "You missed the enemy";
+        }
+        else if(b[row-1][column-1].enemyBd == 'O')
+        {
+            b[row-1][column-1].enemyBd = '+';
+            enmyBlk[row-1][column-1] = '+';
+            cout << endl << "You took out one of the enemy ships!";
+            playrPts++;
+        }
+        else if(b[row-1][column-1].enemyBd == 'X' || 
+                b[row-1][column-1].enemyBd == '+')
+        {
+            cout << endl << "That spot has already been attacked. That was a waste of a turn";
+        }
+        
+        //Confirm enemy's move
+        enmyRow = (rand() % g.rows);
+        enmyCol = (rand() % g.columns);
+            
+        if(b[enmyRow][enmyCol].playrBd == 'O')
+        {
+            b[enmyRow][enmyCol].playrBd = '+';
+            cout << endl << "Noooo! You've been hit!";
+            enmyPts++;
+        }
+        else if(b[enmyRow][enmyCol].playrBd == ' ')
+        {
+            b[enmyRow][enmyCol].playrBd = 'X';
+        }
+        else if(b[enmyRow][enmyCol].enemyBd == 'X' || 
+                b[enmyRow][enmyCol].enemyBd == '+')
+        {
+            cout << endl << "The enemy missed you";
+        }
+    }
 }

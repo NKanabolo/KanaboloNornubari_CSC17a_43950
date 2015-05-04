@@ -7,6 +7,10 @@
 
 #ifndef BOARD_H
 #define	BOARD_H
+#include <cstdlib>
+#include <iostream>
+#include <iomanip>
+#include <ctime>
 
 struct Board
 {

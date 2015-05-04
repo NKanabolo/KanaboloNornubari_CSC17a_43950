@@ -7,6 +7,10 @@
 
 #ifndef PLAYERS_H
 #define	PLAYERS_H
+#include <cstdlib>
+#include <iostream>
+#include <iomanip>
+#include <ctime>
 
 struct Players
 {
