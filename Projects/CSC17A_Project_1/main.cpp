@@ -196,7 +196,7 @@ Players **usrInp(Board b)
 void war(Board g, Players **b)
 {
     //Declare variables
-    int plyrRow = 0;  //Initialize layer rows
+    int plyrRow = 0;  //Initialize player rows
     int plyrCol = 0;  //Initialize player columns
     
     int enmyRow = 0;  //Initialize enemy rows
@@ -277,12 +277,12 @@ void war(Board g, Players **b)
         //Check for the winner
         if(playrPts == g.ships)
         {
-            cout << endl << "You have won the war! The enemy fleet is vanquished!";
+            cout << endl << "You have won the war! The enemy fleet is vanquished!" << endl;
             break;
         }
        else if(enmyPts == g.ships)
         {
-            cout << endl << "You have been defeated by the enemy. Your fleet has been decimated";
+            cout << endl << "You have been defeated by the enemy. Your fleet has been decimated" << endl;
             break;
         }
     
