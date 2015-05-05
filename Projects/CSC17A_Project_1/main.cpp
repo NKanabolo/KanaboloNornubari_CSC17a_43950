@@ -195,6 +195,7 @@ Players **usrInp(Board b)
 //Function where all moves and calculations take place
 void war(Board g, Players **b)
 {
+    //Declare variables
     int plyrRow = 0;  //Initialize layer rows
     int plyrCol = 0;  //Initialize player columns
     
@@ -288,39 +289,39 @@ void war(Board g, Players **b)
         //Get coordinates to attack the enemy
         cout << endl << "Where do you wish to launch an attack, Captain?" << endl;
         cout << "Row: ";
-        cin >> row;
-        while(row <= 0 ||row > g.rows)
+        cin >> plyrRow;
+        while(plyrRow <= 0 ||plyrRow > g.rows)
         {
             cout << endl << "Invalid input. Try again" << endl;
            cout << "Row: ";
-            cin >> row;
+            cin >> plyrRow;
         }
         cout << "Column: ";
-        cin >> column; 
+        cin >> plyrCol; 
         
        //Confirm user's move
-       while(column <= 0 || column > g.columns)
+       while(plyrCol <= 0 || plyrCol > g.columns)
         {
             cout << endl << "Invalid input. Try again" << endl;
             cout << "Column: ";
-            cin >> column;
+            cin >> plyrCol;
         }
     
-        if(b[row-1][column-1].enemyBd == ' ')
+        if(b[plyrRow-1][plyrCol-1].enemyBd == ' ')
         {
-            b[row-1][column-1].enemyBd = 'X';
-            enmyBlk[row-1][column-1] = 'X';
+            b[plyrRow-1][plyrCol-1].enemyBd = 'X';
+            enmyBlk[plyrRow-1][plyrCol-1] = 'X';
             cout << endl << "You missed the enemy";
         }
-        else if(b[row-1][column-1].enemyBd == 'O')
+        else if(b[plyrRow-1][plyrCol-1].enemyBd == 'O')
         {
-            b[row-1][column-1].enemyBd = '+';
-            enmyBlk[row-1][column-1] = '+';
+            b[plyrRow-1][plyrCol-1].enemyBd = '+';
+            enmyBlk[plyrRow-1][plyrCol-1] = '+';
             cout << endl << "You took out one of the enemy ships!";
             playrPts++;
         }
-        else if(b[row-1][column-1].enemyBd == 'X' || 
-                b[row-1][column-1].enemyBd == '+')
+        else if(b[plyrRow-1][plyrCol-1].enemyBd == 'X' || 
+                b[plyrRow-1][plyrCol-1].enemyBd == '+')
         {
             cout << endl << "That spot has already been attacked. That was a waste of a turn";
         }
