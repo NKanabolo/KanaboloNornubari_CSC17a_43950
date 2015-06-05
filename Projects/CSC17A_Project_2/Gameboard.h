@@ -16,7 +16,6 @@ class Board
         //Constructor
         Board();              //Default constructor
         Board(int,int,int);   //Constructor using input
-        
         //Exceptions
         class InvalidInput{};
         
