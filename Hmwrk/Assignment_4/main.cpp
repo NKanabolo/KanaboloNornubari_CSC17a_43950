@@ -25,16 +25,16 @@ using namespace std;
 void Menu();
 int getN();
 void def(int);
-void problem1();   //Chapter 13 Problem1
-void problem2();   //Chapter 13 Problem2
-void problem3();   //Chapter 13 Problem4
-void problem4();   //Chapter 13 Problem7
-void problem5();   //Chapter 13 Problem12
-void problem6();   //Chapter 14 Problem2
-void problem7();   //Chapter 14 Problem4
-void problem8();   //Chapter 14 Problem9
-void problem9();   //Chapter 14 Problem11
-void problem10();  //Chapter 14 Problem12
+void problem1();   //Chapter 13 Problem 1
+void problem2();   //Chapter 13 Problem 2
+void problem3();   //Chapter 13 Problem 4
+void problem4();   //Chapter 13 Problem 7
+void problem5();   //Chapter 13 Problem 12
+void problem6();   //Chapter 14 Problem 2
+void problem7();   //Chapter 14 Problem 4
+void problem8();   //Chapter 14 Problem 9
+void problem9();   //Chapter 14 Problem 11
+void problem10();  //Chapter 14 Problem 12
 
 //Begin Execution Here!!!
 int main(int argv,char *argc[])
@@ -44,16 +44,16 @@ int main(int argv,char *argc[])
         Menu();
         inN=getN();
         switch(inN){
-        case 1:    problem1();break;   //Chapter 13 Problem1
-        case 2:    problem2();break;   //Chapter 13 Problem2
-        case 3:    problem3();break;   //Chapter 13 Problem4
-        case 4:    problem4();break;   //Chapter 13 Problem7
-        case 5:    problem5();break;   //Chapter 13 Problem12
-        case 6:    problem6();break;   //Chapter 14 Problem2
-        case 7:    problem7();break;   //Chapter 14 Problem4
-        case 8:    problem8();break;   //Chapter 14 Problem9
-        case 9:    problem9();break;   //Chapter 14 Problem11
-        case 10:    problem10();break; //Chapter 14 Problem12
+        case 1:    problem1();break;   //Chapter 13 Problem 1
+        case 2:    problem2();break;   //Chapter 13 Problem 2
+        case 3:    problem3();break;   //Chapter 13 Problem 4
+        case 4:    problem4();break;   //Chapter 13 Problem 7
+        case 5:    problem5();break;   //Chapter 13 Problem 12
+        case 6:    problem6();break;   //Chapter 14 Problem 2
+        case 7:    problem7();break;   //Chapter 14 Problem 4
+        case 8:    problem8();break;   //Chapter 14 Problem 9
+        case 9:    problem9();break;   //Chapter 14 Problem 11
+        case 10:    problem10();break; //Chapter 14 Problem 12
         default:   def(inN);}
     }while(inN>=1&&inN<=10);
     return 0;
