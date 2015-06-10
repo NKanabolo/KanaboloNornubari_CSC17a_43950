@@ -10,7 +10,6 @@ using namespace std;
 //User Defined Libraries
 #include <iomanip>
 #include <cstdlib> 
-#include <cstdlib>
 #include <ctime>
 #include <iostream>
 #include <fstream>
@@ -54,11 +53,11 @@ int main(int argc, char** argv) {
     begin();
 
     //Getting input to make the board
-    cout << endl << "How many rows do you want the board to be? ";
+    cout << endl << "Enter the amount of rows you want the board to be: ";
     cin >> row;
-    cout << "How many columns do you want the board to be? ";
+    cout << "Enter the amount of columns you want the board to be: ";
     cin >> column;
-    cout << "How many ships do you want to use in the game? ";
+    cout << "Enter the amount of ships you want to use in the game: ";
     cin >> ship;
     
     //Initializing class object
