@@ -1,8 +1,7 @@
 /* 
  * File:   PersonalInfo.h
- * Author: Nornubari's Laptop
+ * Author: Nornubari Kanabolo
  *
- * Created on June 9, 2015, 7:53 PM
  */
 
 #ifndef PERSONALINFO_H

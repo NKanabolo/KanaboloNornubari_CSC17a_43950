@@ -1,8 +1,7 @@
 /* 
  * File:   Payroll.h
- * Author: Nornubari's Laptop
+ * Author: Nornubari Kanabolo
  *
- * Created on June 9, 2015, 7:54 PM
  */
 
 #ifndef PAYROLL_H

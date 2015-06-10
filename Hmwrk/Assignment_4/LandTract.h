@@ -1,8 +1,7 @@
 /* 
  * File:   LandTract.h
- * Author: Nornubari's Laptop
+ * Author: Nornubari Kanabolo
  *
- * Created on June 9, 2015, 7:55 PM
  */
 
 #ifndef LANDTRACT_H

@@ -1,8 +1,7 @@
 /* 
  * File:   FeetInches.h
- * Author: Nornubari's Laptop
+ * Author: Nornubari Kanabolo
  *
- * Created on June 9, 2015, 7:55 PM
  */
 
 #ifndef FEETINCHES_H
