@@ -30,7 +30,5 @@ class Board
         int getShips() const;
 
 };
-
-
 #endif	/* GAMEBOARD_H */
 
