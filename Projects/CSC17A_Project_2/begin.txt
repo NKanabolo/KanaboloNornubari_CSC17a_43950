@@ -25,7 +25,7 @@
 			     ~     / /   / /   / /   / /  ~      ~~
 			          ~~~   ~~~   ~~~   ~~~
 
-				Welcome to War of Ships 2.0!
+				Welcome to War of Ships V. 2!
 				This is a 2 player ship war game.
 Guess where your opponent's vessels are and sink them before your opponent sinks yours!
 ________________________________________________________________________________

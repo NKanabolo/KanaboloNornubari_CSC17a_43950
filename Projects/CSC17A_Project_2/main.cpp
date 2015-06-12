@@ -1,7 +1,7 @@
 /* 
  * File:   main.cpp
  * Author: Nornubari Kanabolo
- * CSC 17A Project 2
+ * CSC 17A Project 2 - War of Ships V. 2
  */
 
 
