@@ -1,6 +1,6 @@
 /* 
  * File:   Victor.h
- * Author: Nornubari's Laptop
+ * Author: Nornubari Kanabolo
  */
 
 #ifndef VICTOR_H
@@ -17,8 +17,8 @@ class Victor
             usrPnts = 0; 
             enmyPnts = 0;
         }
-        Victor(int pl, int en){ usrPnts = pl; enmyPnts = en;}
-        void setUsrPnts(int pl){usrPnts = pl;}
+        Victor(int us, int en){ usrPnts = us; enmyPnts = en;}
+        void setUsrPnts(int us){usrPnts = us;}
         void setEnmyPnts(int en){enmyPnts = en;}
         void getRslt();
 };

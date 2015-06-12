@@ -1,6 +1,6 @@
 /* 
  * File:   Gameboard.h
- * Author: Nornubari's Laptop
+ * Author: Nornubari Kanabolo
  */
 
 #ifndef GAMEBOARD_H
