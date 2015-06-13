@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_victor" kind="class" language="C++" prot="public">
+    <compoundname>Victor</compoundname>
+    <includes refid="_victor_8h" local="no">Victor.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_victor_1ab91e5cb259f18a3ef5f610a0f99860eb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Victor::usrPnts</definition>
+        <argsstring></argsstring>
+        <name>usrPnts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Victor.h" line="12" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Victor.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_victor_1a08a5956c81fa693b304e6e5164e73799" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Victor::enmyPnts</definition>
+        <argsstring></argsstring>
+        <name>enmyPnts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Victor.h" line="13" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Victor.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_victor_1a126f753a421b5fba1b193582e64a6bc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Victor::Victor</definition>
+        <argsstring>()</argsstring>
+        <name>Victor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Victor.h" line="15" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Victor.h" bodystart="15" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_victor_1a792244883f3fbe59a9e1e685fa6f5f3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Victor::Victor</definition>
+        <argsstring>(int us, int en)</argsstring>
+        <name>Victor</name>
+        <param>
+          <type>int</type>
+          <declname>us</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Victor.h" line="20" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Victor.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_victor_1acf4273bf2ed6c9301b4030988e21ebce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Victor::setUsrPnts</definition>
+        <argsstring>(int us)</argsstring>
+        <name>setUsrPnts</name>
+        <param>
+          <type>int</type>
+          <declname>us</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Victor.h" line="21" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Victor.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_victor_1ae74c8dcc0c04f80175a632f53760733b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Victor::setEnmyPnts</definition>
+        <argsstring>(int en)</argsstring>
+        <name>setEnmyPnts</name>
+        <param>
+          <type>int</type>
+          <declname>en</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Victor.h" line="22" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Victor.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_victor_1a1ff676fb0f70bda12baad855ecd4ccf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Victor::getRslt</definition>
+        <argsstring>()</argsstring>
+        <name>getRslt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Victor.h" line="23" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Victor.cpp" bodystart="7" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Victor.h" line="10" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Victor.h" bodystart="9" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_victor_1a08a5956c81fa693b304e6e5164e73799" prot="private" virt="non-virtual"><scope>Victor</scope><name>enmyPnts</name></member>
+      <member refid="class_victor_1a1ff676fb0f70bda12baad855ecd4ccf7" prot="public" virt="non-virtual"><scope>Victor</scope><name>getRslt</name></member>
+      <member refid="class_victor_1ae74c8dcc0c04f80175a632f53760733b" prot="public" virt="non-virtual"><scope>Victor</scope><name>setEnmyPnts</name></member>
+      <member refid="class_victor_1acf4273bf2ed6c9301b4030988e21ebce" prot="public" virt="non-virtual"><scope>Victor</scope><name>setUsrPnts</name></member>
+      <member refid="class_victor_1ab91e5cb259f18a3ef5f610a0f99860eb" prot="private" virt="non-virtual"><scope>Victor</scope><name>usrPnts</name></member>
+      <member refid="class_victor_1a126f753a421b5fba1b193582e64a6bc8" prot="public" virt="non-virtual"><scope>Victor</scope><name>Victor</name></member>
+      <member refid="class_victor_1a792244883f3fbe59a9e1e685fa6f5f3e" prot="public" virt="non-virtual"><scope>Victor</scope><name>Victor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

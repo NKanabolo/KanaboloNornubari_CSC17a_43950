@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="_gameboard_8cpp" kind="file" language="C++">
+    <compoundname>Gameboard.cpp</compoundname>
+    <includes refid="_gameboard_8h" local="yes">Gameboard.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Gameboard.cpp</label>
+        <link refid="Gameboard.cpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gameboard.h</label>
+        <link refid="_gameboard_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_gameboard_8h" kindref="compound">Gameboard.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_board_1a9ee491d4fea680cf69b033374a9fdfcb" refkind="member"><highlight class="normal"><ref refid="class_board_1a9ee491d4fea680cf69b033374a9fdfcb" kindref="member">Board::Board</ref>()</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>rows<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>columns<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>ships<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9" refid="class_board_1a299f62d90ba5fbdc8440bfe308b8a8aa" refkind="member"><highlight class="normal"><ref refid="class_board_1a9ee491d4fea680cf69b033374a9fdfcb" kindref="member">Board::Board</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ro,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>co,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sh)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>rows<sp/>=<sp/>ro;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>columns<sp/>=<sp/>co;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Exception<sp/>validation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sh<sp/>&lt;<sp/>(ro*co))</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ships<sp/>=<sp/>sh;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_board_1_1_invalid_input" kindref="compound">InvalidInput</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//Mutators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_board_1a6ad160481be18744397f962ee8e4d814" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_board_1a6ad160481be18744397f962ee8e4d814" kindref="member">Board::setRows</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ro)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>rows<sp/>=<sp/>ro;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28" refid="class_board_1af022132b75094fa7b6b6d33bbabb1444" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_board_1af022132b75094fa7b6b6d33bbabb1444" kindref="member">Board::setCols</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>co)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>columns<sp/>=<sp/>co;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32" refid="class_board_1aff7bda31a5f7cc05889b5ac1b81b2b7e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_board_1aff7bda31a5f7cc05889b5ac1b81b2b7e" kindref="member">Board::setShips</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sh)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Exception<sp/>validation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>sh<sp/>&lt;<sp/>(rows<sp/>*<sp/>columns))</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ships<sp/>=<sp/>sh;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_board_1_1_invalid_input" kindref="compound">InvalidInput</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//Accessors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_board_1a80079a2b2bdec57b229bf110ce79c5ef" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_board_1a80079a2b2bdec57b229bf110ce79c5ef" kindref="member">Board::getRows</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rows;}</highlight></codeline>
+<codeline lineno="45" refid="class_board_1a6811a1e496cf240b0e26605c61b167d8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_board_1a6811a1e496cf240b0e26605c61b167d8" kindref="member">Board::getCols</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>columns;}</highlight></codeline>
+<codeline lineno="46" refid="class_board_1a0a3f08f39f671639eacf531225b99eba" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_board_1a0a3f08f39f671639eacf531225b99eba" kindref="member">Board::getShips</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ships;}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.cpp"/>
+  </compounddef>
+</doxygen>

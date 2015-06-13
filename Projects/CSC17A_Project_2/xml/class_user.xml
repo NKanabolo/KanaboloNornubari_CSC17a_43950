@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_user" kind="class" language="C++" prot="public">
+    <compoundname>User</compoundname>
+    <basecompoundref refid="class_board" prot="public" virt="non-virtual">Board</basecompoundref>
+    <includes refid="_user_8h" local="no">User.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_user_1aacae961baf248bd3711c3e8ecaebc9b4" prot="private" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char** User::userBoard</definition>
+        <argsstring></argsstring>
+        <name>userBoard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/User.h" line="14" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/User.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_user_1a350ce24b8e75a6f8a90d5195f1202756" prot="private" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char** User::enmyBoard</definition>
+        <argsstring></argsstring>
+        <name>enmyBoard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/User.h" line="15" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/User.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_user_1a4a0137053e591fbb79d9057dd7d2283d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>User::User</definition>
+        <argsstring>()</argsstring>
+        <name>User</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/User.h" line="17" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/User.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_1aa53ce79e233658ea16fd09c608137a2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>User::User</definition>
+        <argsstring>(int r, int c, int s)</argsstring>
+        <name>User</name>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/User.h" line="18" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/User.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_1ac00b72ad64eb4149f7b21b9f5468c2b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>User::~User</definition>
+        <argsstring>()</argsstring>
+        <name>~User</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/User.h" line="20" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/User.h" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_1a18b240d645b511160ee11e2c2e4a408f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char ** User::getUsr</definition>
+        <argsstring>()</argsstring>
+        <name>getUsr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/User.h" line="26" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/User.cpp" bodystart="8" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_user_1a50527a83a0c583779101b90fabc5f06a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char ** User::getEnmy</definition>
+        <argsstring>()</argsstring>
+        <name>getEnmy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/User.h" line="27" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/User.cpp" bodystart="79" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>Board</label>
+        <link refid="class_board"/>
+      </node>
+      <node id="5">
+        <label>User</label>
+        <link refid="class_user"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>Board</label>
+        <link refid="class_board"/>
+      </node>
+      <node id="7">
+        <label>User</label>
+        <link refid="class_user"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/User.h" line="12" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/User.h" bodystart="11" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_board_1a9ee491d4fea680cf69b033374a9fdfcb" prot="public" virt="non-virtual"><scope>User</scope><name>Board</name></member>
+      <member refid="class_board_1a299f62d90ba5fbdc8440bfe308b8a8aa" prot="public" virt="non-virtual"><scope>User</scope><name>Board</name></member>
+      <member refid="class_user_1a350ce24b8e75a6f8a90d5195f1202756" prot="private" virt="non-virtual"><scope>User</scope><name>enmyBoard</name></member>
+      <member refid="class_board_1a6811a1e496cf240b0e26605c61b167d8" prot="public" virt="non-virtual"><scope>User</scope><name>getCols</name></member>
+      <member refid="class_user_1a50527a83a0c583779101b90fabc5f06a" prot="public" virt="non-virtual"><scope>User</scope><name>getEnmy</name></member>
+      <member refid="class_board_1a80079a2b2bdec57b229bf110ce79c5ef" prot="public" virt="non-virtual"><scope>User</scope><name>getRows</name></member>
+      <member refid="class_board_1a0a3f08f39f671639eacf531225b99eba" prot="public" virt="non-virtual"><scope>User</scope><name>getShips</name></member>
+      <member refid="class_user_1a18b240d645b511160ee11e2c2e4a408f" prot="public" virt="non-virtual"><scope>User</scope><name>getUsr</name></member>
+      <member refid="class_board_1af022132b75094fa7b6b6d33bbabb1444" prot="public" virt="non-virtual"><scope>User</scope><name>setCols</name></member>
+      <member refid="class_board_1a6ad160481be18744397f962ee8e4d814" prot="public" virt="non-virtual"><scope>User</scope><name>setRows</name></member>
+      <member refid="class_board_1aff7bda31a5f7cc05889b5ac1b81b2b7e" prot="public" virt="non-virtual"><scope>User</scope><name>setShips</name></member>
+      <member refid="class_user_1a4a0137053e591fbb79d9057dd7d2283d" prot="public" virt="non-virtual"><scope>User</scope><name>User</name></member>
+      <member refid="class_user_1aa53ce79e233658ea16fd09c608137a2a" prot="public" virt="non-virtual"><scope>User</scope><name>User</name></member>
+      <member refid="class_user_1aacae961baf248bd3711c3e8ecaebc9b4" prot="private" virt="non-virtual"><scope>User</scope><name>userBoard</name></member>
+      <member refid="class_user_1ac00b72ad64eb4149f7b21b9f5468c2b2" prot="public" virt="non-virtual"><scope>User</scope><name>~User</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.9.1">
+  <compound refid="class_board" kind="class"><name>Board</name>
+    <member refid="class_board_1ab0678710e0cb026be902dbb6a8ad8c40" kind="variable"><name>rows</name></member>
+    <member refid="class_board_1abd6db5048c565a2236812ae739f12638" kind="variable"><name>columns</name></member>
+    <member refid="class_board_1a8516818f13e7662c7cbda336307cf38e" kind="variable"><name>ships</name></member>
+    <member refid="class_board_1a9ee491d4fea680cf69b033374a9fdfcb" kind="function"><name>Board</name></member>
+    <member refid="class_board_1a299f62d90ba5fbdc8440bfe308b8a8aa" kind="function"><name>Board</name></member>
+    <member refid="class_board_1a6ad160481be18744397f962ee8e4d814" kind="function"><name>setRows</name></member>
+    <member refid="class_board_1af022132b75094fa7b6b6d33bbabb1444" kind="function"><name>setCols</name></member>
+    <member refid="class_board_1aff7bda31a5f7cc05889b5ac1b81b2b7e" kind="function"><name>setShips</name></member>
+    <member refid="class_board_1a80079a2b2bdec57b229bf110ce79c5ef" kind="function"><name>getRows</name></member>
+    <member refid="class_board_1a6811a1e496cf240b0e26605c61b167d8" kind="function"><name>getCols</name></member>
+    <member refid="class_board_1a0a3f08f39f671639eacf531225b99eba" kind="function"><name>getShips</name></member>
+  </compound>
+  <compound refid="class_board_1_1_invalid_input" kind="class"><name>Board::InvalidInput</name>
+  </compound>
+  <compound refid="class_user" kind="class"><name>User</name>
+    <member refid="class_user_1aacae961baf248bd3711c3e8ecaebc9b4" kind="variable"><name>userBoard</name></member>
+    <member refid="class_user_1a350ce24b8e75a6f8a90d5195f1202756" kind="variable"><name>enmyBoard</name></member>
+    <member refid="class_user_1a4a0137053e591fbb79d9057dd7d2283d" kind="function"><name>User</name></member>
+    <member refid="class_user_1aa53ce79e233658ea16fd09c608137a2a" kind="function"><name>User</name></member>
+    <member refid="class_user_1ac00b72ad64eb4149f7b21b9f5468c2b2" kind="function"><name>~User</name></member>
+    <member refid="class_user_1a18b240d645b511160ee11e2c2e4a408f" kind="function"><name>getUsr</name></member>
+    <member refid="class_user_1a50527a83a0c583779101b90fabc5f06a" kind="function"><name>getEnmy</name></member>
+  </compound>
+  <compound refid="class_victor" kind="class"><name>Victor</name>
+    <member refid="class_victor_1ab91e5cb259f18a3ef5f610a0f99860eb" kind="variable"><name>usrPnts</name></member>
+    <member refid="class_victor_1a08a5956c81fa693b304e6e5164e73799" kind="variable"><name>enmyPnts</name></member>
+    <member refid="class_victor_1a126f753a421b5fba1b193582e64a6bc8" kind="function"><name>Victor</name></member>
+    <member refid="class_victor_1a792244883f3fbe59a9e1e685fa6f5f3e" kind="function"><name>Victor</name></member>
+    <member refid="class_victor_1acf4273bf2ed6c9301b4030988e21ebce" kind="function"><name>setUsrPnts</name></member>
+    <member refid="class_victor_1ae74c8dcc0c04f80175a632f53760733b" kind="function"><name>setEnmyPnts</name></member>
+    <member refid="class_victor_1a1ff676fb0f70bda12baad855ecd4ccf7" kind="function"><name>getRslt</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_8dep_8inc" kind="file"><name>.dep.inc</name>
+  </compound>
+  <compound refid="_gameboard_8cpp" kind="file"><name>Gameboard.cpp</name>
+  </compound>
+  <compound refid="_gameboard_8h" kind="file"><name>Gameboard.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ab0bdf5cca484fb2ba637c39384b27fb2" kind="function"><name>begin</name></member>
+    <member refid="main_8cpp_1ab20c867aaee0d4677b6d0947ecccaedd" kind="function"><name>prntBrd</name></member>
+    <member refid="main_8cpp_1afe6358ef6d0943f81a5d6578815fe7f5" kind="function"><name>userBoard</name></member>
+    <member refid="main_8cpp_1a49f0367d84da191114191917b4a83252" kind="function"><name>enmyBoard</name></member>
+    <member refid="main_8cpp_1aec41a07898d279a8ac27ade6bc271289" kind="function"><name>victory</name></member>
+    <member refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_user_8cpp" kind="file"><name>User.cpp</name>
+  </compound>
+  <compound refid="_user_8h" kind="file"><name>User.h</name>
+  </compound>
+  <compound refid="_victor_8cpp" kind="file"><name>Victor.cpp</name>
+  </compound>
+  <compound refid="_victor_8h" kind="file"><name>Victor.h</name>
+  </compound>
+</doxygenindex>

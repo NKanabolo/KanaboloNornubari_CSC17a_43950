@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_board" kind="class" language="C++" prot="public">
+    <compoundname>Board</compoundname>
+    <derivedcompoundref refid="class_user" prot="public" virt="non-virtual">User</derivedcompoundref>
+    <includes refid="_gameboard_8h" local="no">Gameboard.h</includes>
+    <innerclass refid="class_board_1_1_invalid_input" prot="public">Board::InvalidInput</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_board_1ab0678710e0cb026be902dbb6a8ad8c40" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Board::rows</definition>
+        <argsstring></argsstring>
+        <name>rows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" line="12" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_board_1abd6db5048c565a2236812ae739f12638" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Board::columns</definition>
+        <argsstring></argsstring>
+        <name>columns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" line="13" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_board_1a8516818f13e7662c7cbda336307cf38e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Board::ships</definition>
+        <argsstring></argsstring>
+        <name>ships</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" line="14" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_board_1a9ee491d4fea680cf69b033374a9fdfcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Board::Board</definition>
+        <argsstring>()</argsstring>
+        <name>Board</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" line="17" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.cpp" bodystart="3" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1a299f62d90ba5fbdc8440bfe308b8a8aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Board::Board</definition>
+        <argsstring>(int, int, int)</argsstring>
+        <name>Board</name>
+        <param>
+          <type>int</type>
+          <defname>ro</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>co</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>sh</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" line="18" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.cpp" bodystart="9" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1a6ad160481be18744397f962ee8e4d814" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Board::setRows</definition>
+        <argsstring>(int)</argsstring>
+        <name>setRows</name>
+        <param>
+          <type>int</type>
+          <defname>ro</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" line="23" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.cpp" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1af022132b75094fa7b6b6d33bbabb1444" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Board::setCols</definition>
+        <argsstring>(int)</argsstring>
+        <name>setCols</name>
+        <param>
+          <type>int</type>
+          <defname>co</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" line="24" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.cpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1aff7bda31a5f7cc05889b5ac1b81b2b7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Board::setShips</definition>
+        <argsstring>(int)</argsstring>
+        <name>setShips</name>
+        <param>
+          <type>int</type>
+          <defname>sh</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" line="25" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.cpp" bodystart="32" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1a80079a2b2bdec57b229bf110ce79c5ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Board::getRows</definition>
+        <argsstring>() const </argsstring>
+        <name>getRows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" line="28" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.cpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1a6811a1e496cf240b0e26605c61b167d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Board::getCols</definition>
+        <argsstring>() const </argsstring>
+        <name>getCols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" line="29" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.cpp" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1a0a3f08f39f671639eacf531225b99eba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Board::getShips</definition>
+        <argsstring>() const </argsstring>
+        <name>getShips</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" line="30" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.cpp" bodystart="46" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>Board</label>
+        <link refid="class_board"/>
+      </node>
+      <node id="1">
+        <label>User</label>
+        <link refid="class_user"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" line="10" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" bodystart="9" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_board_1a9ee491d4fea680cf69b033374a9fdfcb" prot="public" virt="non-virtual"><scope>Board</scope><name>Board</name></member>
+      <member refid="class_board_1a299f62d90ba5fbdc8440bfe308b8a8aa" prot="public" virt="non-virtual"><scope>Board</scope><name>Board</name></member>
+      <member refid="class_board_1abd6db5048c565a2236812ae739f12638" prot="private" virt="non-virtual"><scope>Board</scope><name>columns</name></member>
+      <member refid="class_board_1a6811a1e496cf240b0e26605c61b167d8" prot="public" virt="non-virtual"><scope>Board</scope><name>getCols</name></member>
+      <member refid="class_board_1a80079a2b2bdec57b229bf110ce79c5ef" prot="public" virt="non-virtual"><scope>Board</scope><name>getRows</name></member>
+      <member refid="class_board_1a0a3f08f39f671639eacf531225b99eba" prot="public" virt="non-virtual"><scope>Board</scope><name>getShips</name></member>
+      <member refid="class_board_1ab0678710e0cb026be902dbb6a8ad8c40" prot="private" virt="non-virtual"><scope>Board</scope><name>rows</name></member>
+      <member refid="class_board_1af022132b75094fa7b6b6d33bbabb1444" prot="public" virt="non-virtual"><scope>Board</scope><name>setCols</name></member>
+      <member refid="class_board_1a6ad160481be18744397f962ee8e4d814" prot="public" virt="non-virtual"><scope>Board</scope><name>setRows</name></member>
+      <member refid="class_board_1aff7bda31a5f7cc05889b5ac1b81b2b7e" prot="public" virt="non-virtual"><scope>Board</scope><name>setShips</name></member>
+      <member refid="class_board_1a8516818f13e7662c7cbda336307cf38e" prot="private" virt="non-virtual"><scope>Board</scope><name>ships</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

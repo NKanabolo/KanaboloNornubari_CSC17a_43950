@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_board_1_1_invalid_input" kind="class" language="C++" prot="public">
+    <compoundname>Board::InvalidInput</compoundname>
+    <includes refid="_gameboard_8h" local="no">Gameboard.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" line="20" column="1" bodyfile="C:/Users/Nornubari's Laptop/Desktop/KanaboloNornubari_CSC17a_43950/Projects/CSC17A_Project_2/Gameboard.h" bodystart="20" bodyend="20"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
